@@ -229,4 +229,13 @@ body, p, h1 {
   width: 20px;
   margin-right: 10px;
 }
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=mobile.css.map */
