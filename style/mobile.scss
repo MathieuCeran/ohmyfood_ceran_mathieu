@@ -7,6 +7,11 @@ body, p, h1{
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .logo{
     display: flex;
     height: 80px;
