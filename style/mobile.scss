@@ -12,6 +12,7 @@ a {
     color: black;
 }
 
+
 .logo{
     display: flex;
     height: 80px;
@@ -81,17 +82,17 @@ a {
     &__container {
         display: flex;
         background: #F6F6F6;
-        padding: 30px;
+        padding: 20px;
         border-radius: 30px;
         box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
         gap: 30px;
         &:hover, span {
             background: #F5EDFF;
         }
         .fonctionnement__numero {
-            margin-left: -40px;
+            margin-left: -30px;
             background: #9356DC;
             border-radius: 50px;
             width: 25px;
@@ -234,3 +235,5 @@ a {
 
     }
   }
+
+
