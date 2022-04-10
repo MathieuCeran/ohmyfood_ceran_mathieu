@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+body, p, h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid #CCCCCC;
+  font-family: 'Shrikhand', cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.logo .logo__retour {
+  margin-right: 20px;
+  font-size: 30px;
+  color: #353535;
+}
+
+.logo .logo__texte {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+}
+
+.restaurantImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+  width: 100%;
+}
+
+.restaurant__container {
+  background: #F6F6F6;
+  padding: 20px 30px;
+  border-radius: 50px;
+  margin-top: -50px;
+  position: relative;
+}
+
+.restaurant__container .restaurant__nom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant__container .restaurant__nom h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.restaurant__container .restaurant__nom .restaurants__like {
+  font-size: 35px;
+}
+
+.restaurant__container .restaurant__nom .restaurants__like .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: heart-in 0.9s;
+          animation: heart-in 0.9s;
+  font-weight: 800;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heart-in {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes heart-in {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
+/*# sourceMappingURL=restaurants.css.map */

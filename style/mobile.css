@@ -112,7 +112,7 @@ a {
   margin: 20px 0px 0px 0px;
 }
 
-.fonctionnement .fonctionnement__container {
+.fonctionnement__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,11 +126,11 @@ a {
   gap: 30px;
 }
 
-.fonctionnement .fonctionnement__container:hover {
+.fonctionnement__container:hover, .fonctionnement__container span {
   background: #F5EDFF;
 }
 
-.fonctionnement .fonctionnement__numero {
+.fonctionnement__container .fonctionnement__numero {
   margin-left: -40px;
   background: #9356DC;
   border-radius: 50px;
@@ -141,11 +141,11 @@ a {
   font-size: 19px;
 }
 
-.fonctionnement .fonctionnement_icon {
+.fonctionnement__container .fonctionnement_icon {
   color: #7E7E7E;
 }
 
-.fonctionnement .fonctionnement_icon:hover {
+.fonctionnement__container .fonctionnement_icon:hover {
   color: #9356DC;
 }
 
@@ -214,6 +214,16 @@ a {
   font-size: 30px;
 }
 
+.restaurants .restaurants__container .restaurants__like .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: heart-in 0.9s;
+          animation: heart-in 0.9s;
+  font-weight: 800;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer {
   background: #353535;
   color: white;
@@ -242,5 +252,95 @@ a {
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+@-webkit-keyframes heart-in {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes heart-in {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */
