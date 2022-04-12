@@ -1,0 +1,30 @@
+@media screen and (min-width: 1024px)  {
+    .fonctionnement__bcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .restaurants__bcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .restaurants__container {
+            width: 45%;
+            margin: 1rem 1rem;
+        }
+    }
+
+    .footer{
+        ul {
+        display: flex;
+        justify-content: space-around;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+    }
+}
