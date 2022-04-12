@@ -1,10 +1,10 @@
-ohmyfood P3 CERAN Mathieu
+<h1>ohmyfood P3 CERAN Mathieu</h1>
 
 Troisième projet du parcours "Développeur web" chez OpenClassroom. 
 L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
 
-Concernant Ohmyfood 
+<b>Concernant Ohmyfood </b>
 
 Identité
 Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
