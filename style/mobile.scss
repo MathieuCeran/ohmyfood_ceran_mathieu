@@ -71,13 +71,14 @@ a {
 
 .fonctionnement {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     h2{
         font-size: 30px;
         font-weight: bolder;
         margin: 20px 0px 0px 0px;
+    }
+    &__bcontainer {
+        display: flex;
+        flex-direction: column;
     }
     &__container {
         display: flex;
@@ -88,6 +89,7 @@ a {
         font-size: 17px;
         font-weight: bold;
         gap: 30px;
+        margin: 1rem 0;
         &:hover, span {
             background: #F5EDFF;
         }
@@ -114,15 +116,17 @@ a {
 .restaurants {
     background: #F6F6F6;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
     h2 {
         font-size: 30px;
         font-weight: bolder;
         margin: 30px 0px 15px 0px;
     }
-    .restaurants__container {
-        margin: 15px 0;
+    &__bcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+    &__container {
+        margin: 1rem 0;
         background: white;
         border-radius: 25px;
         position: relative;
@@ -153,18 +157,23 @@ a {
             padding: 0px 15px 15px;
             font-size: 18px;
         }
-        .restaurants__like {
+        .restaurants__like i{
             position: absolute;
-            right: 20px;
-            bottom: 20px;
-            font-size: 30px;
-            .fa-heart:hover {            //annimation coeur
-                cursor: pointer;
-                animation: heart-in 0.9s;
-                font-weight: 800;
-                background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+            right: 1rem;
+            bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        .fa-solid {
+            background-image: linear-gradient( #9356DC, #FF79DA);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            &:hover {
+                animation: fondue ease 1s; 
+                animation-fill-mode: forwards; 
+                animation-iteration-count: 1; 
+                opacity: 1;
             }
         }
     }
@@ -197,43 +206,14 @@ a {
 
 ///////////////KEYFRAMES//////////////
 
-@keyframes heart-in {
-    0% {
-      transform: scale(1, 1);
-      font-weight: 200; 
-      -webkit-text-fill-color:black;
-    }
-    30% {
-      transform: scale(1.25, 0.75);
-      font-weight: 200; 
-      -webkit-text-fill-color:black;
-    }
-    40% {
-      transform: scale(0.75, 1.25);
-      font-weight: 800;
-      -webkit-text-fill-color: transparent;
-    }
-    50% {
-      transform: scale(1.15, 0.85);
-      font-weight: 800;
-      -webkit-text-fill-color: transparent;
-    }
-    65% {
-      transform: scale(0.95, 1.05);
-      font-weight: 800;
-      -webkit-text-fill-color: transparent;
-    }
-    75% {
-      transform: scale(1.05, 0.95);
-      font-weight: 800;
-      -webkit-text-fill-color: transparent;
-    }
-    100% {
-      transform: scale(1, 1);
-      font-weight: 800;
-      -webkit-text-fill-color: transparent;
+@keyframes fondue { 
+    0% { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
+} 
 
-    }
-  }
 
 
