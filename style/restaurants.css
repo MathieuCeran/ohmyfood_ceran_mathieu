@@ -78,6 +78,7 @@ a {
   right: 1rem;
   bottom: 0.5rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .restaurant__container .restaurant__nom .fa-solid {

@@ -92,6 +92,7 @@ a {
   font-weight: bold;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -218,6 +219,7 @@ a {
   right: 1rem;
   bottom: 1.5rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .restaurants__container .fa-solid {
