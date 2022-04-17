@@ -1,249 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
 
-body, p, h1{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+body,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.logo{
-    display: flex;
-    height: 80px;
-    border-bottom: 1px solid #CCCCCC;
-    font-family: 'Shrikhand', cursive;
-    align-items: center;
-    padding: 0 20px;
-    .logo__retour {
-        margin-right: 20px;
-        font-size: 30px;
-        color: #353535;
-    }
-    .logo__texte {
-        flex: 2;
-        font-weight: normal;
-        font-size: 35px;
-        text-align: center;
-        
-    }
-    
+.logo {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid #cccccc;
+  font-family: "Shrikhand", cursive;
+  align-items: center;
+  padding: 0 20px;
+  .logo__retour {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #353535;
+  }
+  .logo__texte {
+    flex: 2;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+  }
 }
 
 .restaurantImage {
-    img {
-        object-fit: cover;
-        height: 350px;
-        width: 100%;
-    }
+  img {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+  }
 }
 
-
 .restaurant__container {
-    background: #F6F6F6;
-    padding: 20px 30px;
-    border-radius: 50px;
-    margin-top: -50px;
+  background: #f6f6f6;
+  padding: 20px 30px;
+  border-radius: 50px;
+  margin-top: -50px;
+  position: relative;
+  .restaurant__nom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    .restaurant__nom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        h1 {
-            font-family: 'Shrikhand', cursive;
-            font-weight: normal;
-            font-size: 35px;
-        }
-        .restaurants__like i{
-          position: absolute;
-          right: 1rem;
-          bottom: 0.5rem;
-          font-size: 2rem;
-          cursor: pointer;
-        }
-        .fa-solid {         ///////Coeur annimation
-          background-image: linear-gradient( #9356DC, #FF79DA);
-          color: transparent;
-          background-clip: text;
-          -webkit-background-clip: text;
-          opacity: 0;
-          &:hover {
-              animation: fondue ease 1s; 
-              animation-fill-mode: forwards; 
-              animation-iteration-count: 1; 
-              opacity: 1;
-          }
+    h1 {
+      font-family: "Shrikhand", cursive;
+      font-weight: normal;
+      font-size: 35px;
+    }
+    .restaurants__like i {
+      position: absolute;
+      right: 1rem;
+      bottom: 0.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .fa-solid {
+      ///////Coeur annimation
+      background-image: linear-gradient(#9356dc, #ff79da);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      &:hover {
+        animation: fondue ease 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        opacity: 1;
       }
     }
-    h2 {
-        font-size: 18px;
-        font-weight: normal;
-        text-transform: uppercase;
-        margin-top: 35px;
-    }
-    hr {
-        margin: initial;
-        width: 44px;
-        height: 4px;
-        background: #99E2D0;
-        border: none;
-    }
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 35px;
+  }
+  hr {
+    margin: initial;
+    width: 44px;
+    height: 4px;
+    background: #99e2d0;
+    border: none;
+  }
 }
 
 .menuRestaurant {
-    background-color: white;
-    padding: 1rem;
-    display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: fondue 3s;
+  animation-fill-mode: both;
+  max-width: 100%;
+
+  &__header {
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
-    cursor: pointer;
-    animation: fondue 3s;
-    animation-fill-mode: both;
-    max-width: 100%;
-   
-  
-    &__header {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      flex: 1;
-    }
-  
-    &__titre {
-      margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-  
-    &__description {
-      margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-  
-    &__prix {
-      font-weight: bold;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      padding-left: 0.5rem;
-    }
-  
-    &__checkbox {
-      background-color: #99e2d0;
-      margin: -1rem -5rem -1rem 1rem;
-      width: 4rem;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      transition-duration: 0.5s;
-    }
-  
-    &:hover &__checkbox {
-      margin-right: -1rem;
-    }
-  
-    &__icone {
-      height: 1.6rem;
-      width: 1.6rem;
-      background-color: white;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius: 100px;
-      transform: rotate(180deg);
-      transition-duration: 0.5s;
-  
-    }
-  
-    &:hover &__icone {
-      transform: rotate(0);
-    }
-  
-    &__icon {
-      color: #99e2d0;
-    }
+    flex: 1;
   }
-  
-  @for $i from 0 through 9 {  ///// Animation affichage menu en fondu
-    .delay-#{$i} {
-      animation-delay:  200ms * $i;
-    }
+
+  &__titre {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
-  
-  .wrapBtn {
+
+  &__description {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__prix {
+    font-weight: bold;
     display: flex;
-    text-decoration: none;
-    justify-content: center;
-    padding: 3rem 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
   }
+
+  &__checkbox {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__checkbox {
+    margin-right: -1rem;
+  }
+
+  &__icone {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+
+  &:hover &__icone {
+    transform: rotate(0);
+  }
+
+  &__icon {
+    color: #99e2d0;
+  }
+}
+
+@for $i from 0 through 9 {
+  ///// Animation affichage menu en fondu
+  .delay-#{$i} {
+    animation-delay: 200ms * $i;
+  }
+}
+
+.wrapBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3rem 0;
+}
 
 .restaurants__boutons {
-        background: linear-gradient(#FF79DA, #9356DC);
-        margin: 10px;
-        padding: 20px 40px;
-        width: 150px;
-        color: white;  
-        box-shadow: 0 0 20px #eee;
-        border-radius: 30px;
-        font-size: 17px;
-        font-weight: bold;
-        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.31);
-        text-align: center;
-        margin: 50px auto;
-        cursor: pointer;
-        transition: all 300ms;
-        &:hover {
-          box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.61);
-          transform: scale(1.02);
-          opacity: 0.8;
-      }
+  background: linear-gradient(#ff79da, #9356dc);
+  margin: 10px;
+  padding: 20px 40px;
+  width: 150px;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  text-align: center;
+  margin: 50px auto;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
+    transform: scale(1.02);
+    opacity: 0.8;
+  }
 }
-
 
 .footer {
-    background: #353535;
+  background: #353535;
+  color: white;
+  padding: 10px 30px;
+  h3 {
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  i {
+    width: 20px;
+    margin-right: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
     color: white;
-    padding: 10px 30px;
-    h3{
-        font-family: 'Shrikhand', cursive;
-        font-weight: normal;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    i {
-        width: 20px;
-        margin-right: 10px;
-    }
-    li {
-        margin-bottom: 10px;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  }
 }
 
-
-
-
 ///////////////KEYFRAMES//////////////
-@keyframes fondue { 
-  0% { 
-  opacity: 0; 
-  } 
-  100% { 
-  opacity: 1; 
-  } 
-} 
+@keyframes fondue {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
