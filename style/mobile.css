@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
-body, p, h1 {
+body,
+p,
+h1 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -16,26 +18,26 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  border-bottom: 1px solid #CCCCCC;
-  font-family: 'Shrikhand', cursive;
+  border-bottom: 1px solid #cccccc;
+  font-family: "Shrikhand", cursive;
   font-weight: normal;
   font-size: 35px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .ville {
-  background: #EAEAEA;
+  background: #eaeaea;
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: inset 0px 17px 10px -13px #CCCCCC;
-          box-shadow: inset 0px 17px 10px -13px #CCCCCC;
+  -webkit-box-shadow: inset 0px 17px 10px -13px #cccccc;
+  box-shadow: inset 0px 17px 10px -13px #cccccc;
 }
 
 .ville .ville__icon {
@@ -45,26 +47,26 @@ a {
   width: 170px;
   margin: auto;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   font-weight: bold;
   font-size: 18px;
   color: #353535;
 }
 
 .nosRestaurants {
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -79,19 +81,25 @@ a {
 }
 
 .nosRestaurants .nosRestaurants__boutons {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background: linear-gradient(#ff79da, #9356dc);
   margin: 10px;
   padding: 20px 40px;
   width: 200px;
   color: white;
   -webkit-box-shadow: 0 0 20px #eee;
-          box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 20px #eee;
   border-radius: 30px;
   font-size: 17px;
   font-weight: bold;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.31);
   cursor: pointer;
   -webkit-transition: all 300ms;
   transition: all 300ms;
@@ -99,9 +107,9 @@ a {
 
 .nosRestaurants .nosRestaurants__boutons:hover {
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   opacity: 0.8;
 }
 
@@ -121,32 +129,33 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .fonctionnement__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 20px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   font-size: 17px;
   font-weight: bold;
   gap: 30px;
   margin: 1rem 0;
 }
 
-.fonctionnement__container:hover, .fonctionnement__container span {
-  background: #F5EDFF;
+.fonctionnement__container:hover,
+.fonctionnement__container span {
+  background: #f5edff;
 }
 
 .fonctionnement__container .fonctionnement__numero {
   margin-left: -30px;
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 50px;
   width: 25px;
   text-align: center;
@@ -156,15 +165,18 @@ a {
 }
 
 .fonctionnement__container .fonctionnement_icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
 
 .fonctionnement__container .fonctionnement_icon:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
+.fonctionnement__container:hover i {
+  color: #9356dc;
+}
 .restaurants {
-  background: #F6F6F6;
+  background: #f6f6f6;
   padding: 30px;
 }
 
@@ -180,8 +192,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .restaurants__container {
@@ -190,36 +202,36 @@ a {
   border-radius: 25px;
   position: relative;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 300ms;
   transition: all 300ms;
 }
 
 .restaurants__container:hover {
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.61);
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .restaurants__container img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
 
 .restaurants__container .restaurants__stickers {
   position: absolute;
-  background: #99E2D0;
+  background: #99e2d0;
   padding: 7px 15px;
   right: 15px;
   top: 15px;
   border-radius: 5px;
   font-size: 15px;
   font-weight: bold;
-  color: #00805E;
+  color: #00805e;
 }
 
 .restaurants__container .restaurants__nom {
@@ -242,8 +254,14 @@ a {
 }
 
 .restaurants__container .fa-solid {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background-image: linear-gradient(#9356dc, #ff79da);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -252,11 +270,11 @@ a {
 
 .restaurants__container .fa-solid:hover {
   -webkit-animation: fondue ease 1s;
-          animation: fondue ease 1s;
+  animation: fondue ease 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   opacity: 1;
 }
 
@@ -267,7 +285,7 @@ a {
 }
 
 .footer h3 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   font-weight: normal;
 }
 
@@ -296,39 +314,47 @@ a {
   height: 100vh;
   width: 100%;
   z-index: 1;
-  -webkit-animation: chargement 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s both;
-          animation: chargement 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s both;
+  -webkit-animation: chargement 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s
+    both;
+  animation: chargement 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 3s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .chargement span {
   margin: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
-  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .chargement i {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background-image: linear-gradient(#9356dc, #ff79da);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: pulse 1.5s ease-in-out infinite both;
-          animation: pulse 1.5s ease-in-out infinite both;
+  animation: pulse 1.5s ease-in-out infinite both;
   opacity: 1;
 }
 
